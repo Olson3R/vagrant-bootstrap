@@ -60,7 +60,7 @@ EOF
 
 function setup_restapi {
   cd /home/vagrant/www || die "Failed to change to ~/www for the rest api"
-  # git clone git@github.com:Olson3R/rest-hapi-bootstrap.git || die "Failed to clone the rest api repo"
+  git clone git@github.com:Olson3R/rest-hapi-bootstrap.git
 
   cd /home/vagrant/www/rest-hapi-bootstrap || die "Failed to change to ~/www/rest-hapi-bootstrap"
   npm install || die "Failed to npm install for the rest api"
@@ -68,12 +68,11 @@ function setup_restapi {
 }
 
 function setup_client {
-  # cd /home/vagrant/www || die "Failed to change to ~/www for the client"
-  # git clone git@github.com:Olson3R/client-hapi-bootsrap.git || die "Failed to clone the client repo"
+  cd /home/vagrant/www || die "Failed to change to ~/www for the client"
+  git clone git@github.com:Olson3R/client-hapi-bootsrap.git
 
-  # cd /home/vagrant/www/client-hapi-bootsrap || die "Failed to change to ~/www/client-hapi-bootsrap"
-  # npm install || die "Failed to npm install for the client"
-  echo "TODO"
+  cd /home/vagrant/www/client-hapi-bootstrap || die "Failed to change to ~/www/client-hapi-bootstrap"
+  npm install || die "Failed to npm install for the client"
 }
 
 if [ -e "/etc/vagrant-provisioned" ];
