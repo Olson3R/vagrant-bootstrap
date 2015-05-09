@@ -2,7 +2,7 @@
 Bootstrap vagrant project for rest-hapi-bootstrap and client-hapi-bootstrap.
 
 # Instructions
-1. Make sure you have vagrant () installed
+1. Make sure you have vagrant (https://www.vagrantup.com/) installed
 2. Clone this repo `git clone git@github.com:Olson3R/vagrant-bootstrap.git`
 3. Change directories to the repo `cd vagrant-bootstrap`
 4. Bring up the vagrant machine `vagrant up`
