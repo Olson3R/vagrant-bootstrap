@@ -1,5 +1,5 @@
 # vagrant-bootstrap
-Bootstrap vagrant project for rest-hapi-bootstrap and client-hapi-bootstrap.
+Bootstrap vagrant project for [rest-hapi-bootstrap](https://github.com/Olson3R/rest-hapi-bootstrap) and [client-hapi-bootstrap](https://github.com/Olson3R/client-hapi-bootstrap).
 
 # Instructions
 1. Make sure you have vagrant (https://www.vagrantup.com/) installed
@@ -17,4 +17,4 @@ Bootstrap vagrant project for rest-hapi-bootstrap and client-hapi-bootstrap.
 9. Run your node apps
 
 # Notes
-1. The VM will be privately accessible under IP 192.168.30.10 by default
+1. The VM will be host-only accessible under IP 192.168.30.10 by default
