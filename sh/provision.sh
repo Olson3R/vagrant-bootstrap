@@ -59,20 +59,15 @@ EOF
 }
 
 function setup_restapi {
-  cd /home/vagrant/www || die "Failed to change to ~/www for the rest api"
-  git clone git@github.com:Olson3R/rest-hapi-bootstrap.git
-
   cd /home/vagrant/www/rest-hapi-bootstrap || die "Failed to change to ~/www/rest-hapi-bootstrap"
   npm install || die "Failed to npm install for the rest api"
   sequelize --options-path=/home/vagrant/www/rest-hapi-bootstrap/config/database.json db:migrate || die "Failed to migrate the db for the rest api"
 }
 
 function setup_client {
-  cd /home/vagrant/www || die "Failed to change to ~/www for the client"
-  git clone git@github.com:Olson3R/client-hapi-bootsrap.git
-
   cd /home/vagrant/www/client-hapi-bootstrap || die "Failed to change to ~/www/client-hapi-bootstrap"
   npm install || die "Failed to npm install for the client"
+  gulp setup || die "Failed gulp setup the client app"
 }
 
 if [ -e "/etc/vagrant-provisioned" ];
