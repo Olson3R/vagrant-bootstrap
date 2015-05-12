@@ -15,3 +15,6 @@ Bootstrap vagrant project for rest-hapi-bootstrap and client-hapi-bootstrap.
  * Note: Provisioning will take a while as well the first time the vm provisions
 8. Ssh into the vm `vagrant ssh`
 9. Run your node apps
+
+# Notes
+1. The VM will be privately accessible under IP 192.168.30.10 by default
